@@ -11,6 +11,9 @@ function Zendesk(config){
     users: require('./accessor.js')(config, 'user', 'users'),
     userFields: require('./accessor.js')(config, 'user_field', 'user_fields'),
 
+    groups: require('./accessor.js')(config, 'group', 'groups'),
+    groupMemberships: require('./accessor.js')(config, 'group_membership', 'group_memberships'),
+
     macros: require('./accessor.js')(config, 'macro', 'macros'),
     search: require('./accessor.js')(config, 'search', 'search')
   };
